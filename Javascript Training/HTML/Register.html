@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login here</title>
+	<link rel="stylesheet" href="Login.css">
+</head>
+
+
+<body>
+	<script src="validation.js">
+		var date = new Date();
+		var month = date.getDate() + 1;
+		var year = date.getFullYear();
+		var todayDate = date.getDate()
+		if (month < 10) {
+			month = "0" + month;
+		}
+		if (todayDate < 10) {
+			todayDate = "0" + todayDate;
+		}
+		var maxDate = year + "-" + month + "-" + todayDate;
+		document.getElementById("demo").setAttribute("max", maxDate);
+	</script>
+	<h1>My Airlines</h1>
+	<hr>
+	<h2>Register Here</h2>
+
+	<form action="Login3.html">
+
+
+		<table style="margin-right: auto; margin-left: auto">
+
+
+			<tr>
+				<td>
+					<label>Enter email</label>
+				</td>
+
+				<td>
+					<input type=text  name="ueamil">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label>Enter birthdate</label>
+				</td>
+
+				<td>
+					<input type=date id="demo"  name="udob">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label>Enter username</label>
+				</td>
+
+				<td>
+					<input type=text name="uname">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label>Enter password</label>
+				</td>
+				<td>
+					<input type=password name="upass">
+				</td>
+			</tr>
+
+			<tr>
+				<td> Already Registered? Click <a href="Login.html">Here</a></td>
+			</tr>
+
+			<tr>
+				<td> <button type="submit" style="background-color: rgb(90, 207, 90);">Register</button> </td>
+				<td>
+					<button style="background-color: rgb(218, 100, 100)" onclick="clearTheForm()">Clear</button>
+				</td>
+			</tr>
+
+			<tr>
+
+			</tr>
+	</form>
+
+
+	</table>
+
+</body>
+
+</html>
